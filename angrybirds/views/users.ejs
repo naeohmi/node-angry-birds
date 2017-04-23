@@ -4,26 +4,22 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css'/>
   </head>
-
   <body>
-    <h1><%= title %></h1>
-    <p>Yay for <%= title %></p>
 
-	<div>
+    <h1><%= title %></h1>
+	<div class ="box">
       <ul>
       <% birds.forEach(function(brd){ %>
-        <li><h1><%= brd.name %></h1></li>
-        <li><%= brd.abilities %></li>
-        <li><%= brd.group %></li>
-        <li><%= brd.species %></li>
-        <li><%= brd.feels %></li>
-        <!-- <li><%= brd.id %></li> -->
-		<img src='<%= brd.image %>' />
-
+        <li><h1><a href="/angry-birds:<%= brd.id %>">Name: <%= brd.name %></a></h1></li>
+        <li>Abilities: <%= brd.abilities %></li>
+        <li>Group: <%= brd.group %></li>
+        <li>Species: <%= brd.species %></li>
+        <li>Feels: <%= brd.feels %></li>
+		<img src='<%= brd.image %>'>
+		<p></p>
       <% }); %>
     </ul>
     </div>
 
   </body>
-
 </html>
