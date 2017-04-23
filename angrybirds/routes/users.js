@@ -4,12 +4,12 @@ var birds = require('../data/birds');
 var router = express.Router();
 
 /* GET users listing. */
-router.get('/angry-birds', function(req, res, next) {
-  res.render('users', {
-  	title: 'angryyy',
-  	birds: birds
-  });
-});
+// router.get('/angry-birds', function(req, res, next) {
+//   res.render('users', {
+//   	title: 'angryyy',
+//   	birds: birds
+//   });
+// });
 
 
 //`/angry-birds` will render a view of ALL angry birds

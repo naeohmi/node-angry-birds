@@ -12,14 +12,14 @@
 	<div>
       <ul>
       <% birds.forEach(function(brd){ %>
-		
-		 <img src='./brd.image' />
-
         <li><h1><%= brd.name %></h1></li>
         <li><%= brd.abilities %></li>
         <li><%= brd.group %></li>
         <li><%= brd.species %></li>
         <li><%= brd.feels %></li>
+        <!-- <li><%= brd.id %></li> -->
+		<img src='<%= brd.image %>' />
+
       <% }); %>
     </ul>
     </div>
