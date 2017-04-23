@@ -4,7 +4,7 @@ var router = express.Router();
 //`/` should render a home page with a link to '/angry-birds'
 router.get('/', function(req, res, next) {
     res.render('index', {
-    	title: 'Express'
+    	title: 'Angry-Birds'
     });
 });
 
