@@ -7,13 +7,19 @@
 
   <body>
     <h1><%= title %></h1>
-    <p>Bob to <%= title %></p>
+    <p>Yay for <%= title %></p>
 
 	<div>
       <ul>
       <% birds.forEach(function(brd){ %>
-        <li><%= brd.name %></li>
-        
+		
+		 <img src='./brd.image' />
+
+        <li><h1><%= brd.name %></h1></li>
+        <li><%= brd.abilities %></li>
+        <li><%= brd.group %></li>
+        <li><%= brd.species %></li>
+        <li><%= brd.feels %></li>
       <% }); %>
     </ul>
     </div>
