@@ -26,8 +26,8 @@ router.get('/angry-birds', function(req, res, next) {
 //This should have the bird's name, ability, image, and group visible on the page
 // //also has links back to `/` and `/angry-birds`
 router.get('/angry-birds:id', function(req, res, next) {
-	res.render('users', {
-		title: 'angry-birds:id',
+	res.render('id', {
+		title: 'angry-birds:idd',
 		birds: birds
 	});
 });
