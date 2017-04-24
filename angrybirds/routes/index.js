@@ -3,6 +3,8 @@ var birds = require('../data/birds');
 
 var router = express.Router();
 
+var fs = require("fs");
+
 //`/` should render a home page with a link to '/angry-birds'
 router.get('/', function(req, res, next) {
     res.render('index', {
@@ -26,9 +28,10 @@ router.get('/angry-birds', function(req, res, next) {
 //This should have the bird's name, ability, image, and group visible on the page
 // //also has links back to `/` and `/angry-birds`
 router.get('/angry-birds:id', function(req, res, next) {
+    var id = req.params.id;
     res.render('id', {
-    	title: 'angry-birds:id',
-        birds: birds,
+    	title: 'angry-birds:id'
+        // entry: 
     });
 });
 
