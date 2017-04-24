@@ -50,6 +50,11 @@ ul {
 img {
 	width: 100px;
 	height: 100px;
+  	transition: 2s;
+}
+img:hover {
+  width: 120px;
+  height: 120px;
 }
 .box {
 	border: 2px solid black;
@@ -66,7 +71,7 @@ p {
 	<div class ="box">
       <ul>
       <% birds.forEach(function(brd){ %>
-        <li><h1><a href="/angry-birds:<%= brd.id %>">Name: <%= brd.name %></a></h1></li>
+        <li><h1><a href="/angry-birds/<%= brd.id %>">Name: <%= brd.name %></a></h1></li>
         <li>Abilities: <%= brd.abilities %></li>
         <li>Group: <%= brd.group %></li>
         <li>Species: <%= brd.species %></li>
