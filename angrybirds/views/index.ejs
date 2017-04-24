@@ -47,10 +47,13 @@ h1 {
 </style>
 
   <body>  	
+<%- include('partials/header') %>
 
     <h1><%= title %></h1>
-    <p>Greetings! Click to process to <a href="angry-birds">angry-birds</a> in the <%= env %> </p>
+    <p>Greetings! Click to go to <a href="angry-birds">angry-birds</a> in the <%= env %> </p>
     
+        <%- include('partials/footer') %>
+
   </body>
 
 </html>
