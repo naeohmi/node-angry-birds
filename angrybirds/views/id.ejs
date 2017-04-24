@@ -12,25 +12,19 @@
 </style>
 
   <body>
-
-
-
-
-
     <h1>This bird is:<%= title %></h1>
 	<div class ="box">
       <ul>
-      <!-- <% for(let i = 0; i <= birds.length; i++) { %> -->
-        <li><h1><a href="/angry-birds:<%= brd.id %>">Name: <%= brd.name[i] %></a></h1></li>
-        <li>Abilities: <%= brd.abilities %></li>
-        <li>Group: <%= brd.group %></li>
-        <li>Species: <%= brd.species %></li>
-        <li>Feels: <%= brd.feels %></li>
-		<img src='<%= brd.image[i] %>'>
+      <% for(let i = 0; i <= birds.length; i++) { %>
+        <li><h1><a href="/angry-birds:<%= i %>">Name: <%= birds.name %></a></h1></li>
+        <li>Abilities: <%= birds[i].abilities %></li>
+        <li>Group: <%= birds[i].group %></li>
+        <li>Species: <%= birds[i].species %></li>
+        <li>Feels: <%= birds[i].feels %></li>
+		<img src='<%= birds[i].image %>'>
 		<p></p>
       <% }; %>
     </ul>
     </div>
-
   </body>
 </html>

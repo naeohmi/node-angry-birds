@@ -27,7 +27,7 @@ router.get('/angry-birds', function(req, res, next) {
 // //also has links back to `/` and `/angry-birds`
 router.get('/angry-birds:id', function(req, res, next) {
 	res.render('id', {
-		title: 'angry-birds:idd',
+		title: 'angry-birds:id',
 		birds: birds
 	});
 });
