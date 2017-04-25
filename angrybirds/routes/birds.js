@@ -1,7 +1,6 @@
 require('dotenv').config();
 const express = require('express');
 const birds = require('../data/birds');
-
 const router = express.Router();
 
 // `/angry-birds` will render a view of ALL angry birds
